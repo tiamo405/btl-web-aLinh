@@ -10,9 +10,9 @@
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="index.html" class="active">Trang chủ</a></li>
-        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
-        <li><a href="so-thich.html">Sở thích</a></li>
+        <li><a href="#" class="active" data-home>Trang chủ</a></li>
+        <li><a href="#" data-popup-target="introPopup">Giới thiệu</a></li>
+        <li><a href="#" data-popup-target="hobbyPopup">Sở thích</a></li>
       </ul>
     </nav>
   </header>
@@ -49,6 +49,107 @@
       </div>
     </section>
   </main>
+
+  <div class="popup" id="introPopup" aria-hidden="true">
+    <div class="popup-backdrop" data-popup-close></div>
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+      <button class="popup-close" type="button" aria-label="Đóng" data-popup-close>&times;</button>
+      <section class="card">
+        <h1 id="introTitle">Giới thiệu bản thân</h1>
+        <p class="intro-text">
+          Mình là Mai Chi Linh, sinh viên ngành Công nghệ thông tin. Mình yêu thích việc xây dựng các sản phẩm nhỏ,
+          tự học công nghệ mới và luôn cố gắng nâng cao tư duy giải quyết vấn đề trong lập trình.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Định hướng nghề nghiệp</h2>
+        <div class="grid-cards two-cols">
+          <article class="mini-card">
+            <img src="/imgs/software-engineering.webp" alt="Backend" class="thumb">
+            <h3>Software Engineer</h3>
+            <p>Định hướng làm Software Engineer, ưu tiên môi trường có mentor và dự án thực tế.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/ky-nang-mem-la-gi-cach-giup-ban-phat-trien-ky-nang-mem-hieu-qua.png" alt="Frontend" class="thumb">
+            <h3>Phát triển kỹ năng</h3>
+            <p>Đang tập trung cải thiện JavaScript, UI cơ bản và kỹ năng làm việc nhóm trong dự án.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Kinh nghiệm học tập</h2>
+        <div class="grid-cards three-cols">
+          <article class="mini-card">
+            <img src="/imgs/cafedev_web_dev.jpg" alt="Môn học" class="thumb">
+            <h3>Web cơ bản</h3>
+            <p>Đã học HTML, CSS, JavaScript và xây dựng các trang web tĩnh cho bài tập môn học.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/dau-moi-la-thuat-toan-sap-xep-tot-nhat-63743511849.0545.jpg" alt="Thuật toán" class="thumb">
+            <h3>Thuật toán</h3>
+            <p>Luyện tập cấu trúc dữ liệu, giải bài tập tư duy để cải thiện khả năng tối ưu code.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/cai-thien-ky-nang-lam-viec-nhom-hieu-qua.jpg" alt="Làm nhóm" class="thumb">
+            <h3>Làm việc nhóm</h3>
+            <p>Tham gia nhóm 3-5 người trong các dự án môn học để rèn kỹ năng giao tiếp kỹ thuật.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="popup" id="hobbyPopup" aria-hidden="true">
+    <div class="popup-backdrop" data-popup-close></div>
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="hobbyTitle">
+      <button class="popup-close" type="button" aria-label="Đóng" data-popup-close>&times;</button>
+      <section class="card">
+        <h1 id="hobbyTitle">Sở thích &amp; Thể thao</h1>
+        <p class="intro-text">
+          Ngoài học tập và lập trình, mình dành thời gian cho thể thao để giữ sức khỏe và cân bằng cuộc sống.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Các môn thể thao yêu thích</h2>
+        <div class="grid-cards three-cols">
+          <article class="mini-card">
+            <img src="/imgs/sport1.jpg" alt="Bóng đá" class="thumb">
+            <h3>Bóng đá</h3>
+            <p>Chơi cuối tuần cùng bạn bè để tăng sức bền và tinh thần đồng đội.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/cau_long_2cbc13e6bb7a49f7b05a5af48cfe7ce7.png" alt="Cầu lông" class="thumb">
+            <h3>Cầu lông</h3>
+            <p>Môn thể thao giúp cải thiện phản xạ và rèn luyện sự linh hoạt.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/chay-bo-1472468332.jpg" alt="Chạy bộ" class="thumb">
+            <h3>Chạy bộ</h3>
+            <p>Duy trì chạy bộ buổi sáng 3 buổi mỗi tuần để nâng cao thể lực.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Sở thích khác</h2>
+        <div class="grid-cards two-cols">
+          <article class="mini-card">
+            <img src="/imgs/lap-trinh-may-tinh-la-gi-1.jpg" alt="Lập trình" class="thumb">
+            <h3>Lập trình</h3>
+            <p>Thích xây dựng các project nhỏ để thực hành kiến thức trên lớp.</p>
+          </article>
+          <article class="mini-card">
+            <img src="/imgs/images.jpeg" alt="Công nghệ" class="thumb">
+            <h3>Công nghệ</h3>
+            <p>Quan tâm các xu hướng mới như AI, Cloud và phát triển phần mềm hiện đại.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

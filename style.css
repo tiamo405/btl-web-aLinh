@@ -129,3 +129,57 @@ header {
 .hidden {
   display: none;
 }
+
+.popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup.show {
+  display: flex;
+}
+
+.popup-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(17, 24, 39, 0.6);
+}
+
+.popup-content {
+  position: relative;
+  width: min(920px, calc(100% - 32px));
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  z-index: 1;
+}
+
+.popup-close {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background-color: #1f2937;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  background-color: #374151;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
